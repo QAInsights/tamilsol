@@ -3,8 +3,8 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
@@ -14,21 +14,13 @@
       border-radius: 0;
     }    
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: auto}
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
       background-color: #f1f1f1;
-      height: 100%;
+      height: auto;
     }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -40,56 +32,170 @@
   </style>
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      </ul>
-    </div>
-  </div>
+<!-- Image and text -->
+<nav class="navbar navbar-light" style="background-color: #5F7FFF;">
+  <a class="navbar-brand" href="#">
+    <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Tamil Sol
+  </a>
 </nav>
-  
+
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+    <div class="col-sm-2 sidenav">    
+      <p><a href="#">Link</a></p>      
     </div>
+
     <div class="col-sm-8 text-left"> 
       <h1>Welcome to Tamil Sol!</h1>
-      <p>The objective of this website is to </p>
+      <p>The objective of this website is to help children to learn Tamil language by pronouncing each character clearly.</p>
       <hr>
-      <h3>Test</h3>
-      <p>Lorem ipsum...</p>
+      <h3>அ ஆ ... </h3>
+      <p>அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soul\soul.mp3">
+      </audio>
+
+      <hr>
+      <h3>க் ங் ... </h3>
+      <p>க் ங் ச் ஞ் ட் ண் த் ந் ப் ம் ய்  ர் ல் வ் ழ் ள் ற் ன்</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\soulbody.mp3">
+      </audio>
+
+      <hr>
+      <h3>க ங ... </h3>
+      <p>க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\body\body.mp3">
+      </audio>
+
+      <hr>
+      <h3>க கா ... </h3>
+      <p>க 	கா 	கி 	கீ 	கு 	கூ 	கெ 	கே 	கை 	கொ 	கோ 	கௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr
+
+      <hr>
+      <h3>ங ஙா  ... </h3>
+      <p>ங 	ஙா 	ஙி 	ஙீ 	ஙு 	ஙூ 	ஙெ 	ஙே 	ஙை 	ஙொ 	ஙோ 	ஙௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr
+
+      <hr>
+      <h3>ச 	சா ... </h3>
+      <p>ச 	சா 	சி 	சீ 	சு 	சூ 	செ 	சே 	சை 	சொ 	சோ 	சௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+      <h3>ட 	டா ... </h3>
+      <p>ட 	டா 	டி 	டீ 	டு 	டூ 	டெ 	டே 	டை 	டொ 	டோ 	டௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ண 	ணா ... </h3>
+      <p>ண 	ணா 	ணி 	ணீ 	ணு 	ணூ 	ணெ 	ணே 	ணை 	ணொ 	ணோ 	ணௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+      <hr>
+
+       <h3>த 	தா ... </h3>
+      <p>த 	தா 	தி 	தீ 	து 	தூ 	தெ 	தே 	தை 	தொ 	தோ 	தௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+
+      <hr>
+
+       <h3>ந 	நா ... </h3>
+      <p>ந 	நா 	நி 	நீ 	நு 	நூ 	நெ 	நே 	நை 	நொ 	நோ 	நௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ம 	மா ... </h3>
+      <p>ம 	மா 	மி 	மீ 	மு 	மூ 	மெ 	மே 	மை 	மொ 	மோ 	மௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ய 	யா ... </h3>
+      <p>ய 	யா 	யி 	யீ 	யு 	யூ 	யெ 	யே 	யை 	யொ 	யோ 	யௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ர 	ரா ... </h3>
+      <p>ர 	ரா 	ரி 	ரீ 	ரு 	ரூ 	ரெ 	ரே 	ரை 	ரொ 	ரோ 	ரௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ல 	லா ... </h3>
+      <p>ல 	லா 	லி 	லீ 	லு 	லூ 	லெ 	லே 	லை 	லொ 	லோ 	லௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>வ 	வா ... </h3>
+      <p>வ 	வா 	வி 	வீ 	வு 	வூ 	வெ 	வே 	வை 	வொ 	வோ 	வௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ழ 	ழா ... </h3>
+      <p>ழ 	ழா 	ழி 	ழீ 	ழு 	ழூ 	ழெ 	ழே 	ழை 	ழொ 	ழோ 	ழௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ள 	ளா ... </h3>
+      <p>ள 	ளா 	ளி 	ளீ 	ளு 	ளூ 	ளெ 	ளே 	ளை 	ளொ 	ளோ 	ளௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+       <h3>ற 	றா ... </h3>
+      <p>ற 	றா 	றி 	றீ 	று 	றூ 	றெ 	றே 	றை 	றொ 	றோ 	றௌ</p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+      <hr>
+
+     <h3>ன 	னா ... </h3>
+      <p>ன 	னா 	னி 	னீ 	னு 	னூ 	னெ 	னே 	னை 	னொ 	னோ 	னௌ </p>
+      <audio controls class="embed-responsive-item">
+        <source src=".\audio\soulbody\kakaa.mp3">
+      </audio>
+
     </div>
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
+      <div class="card">
+        <a href="https://www.buymeacoffee.com/qainsights" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>      <div class="well">
       </div>
     </div>
   </div>
 </div>
-
-<footer class="container-fluid text-center navbar fixed-bottom">
-  <p>Footer Text</p>
+<footer>
+  <p>Thanks <a href="https://fonts.google.com/specimen/Mukta+Malar">Google Fonts</a></p>
 </footer>
-
 </body>
 </html>
