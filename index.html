@@ -6,55 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Meera+Inimai&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href=".\slick\slick.css"/>
+  <link rel="stylesheet" type="text/css" href=".\slick\slick-theme.css"/>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: auto}
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: auto;
-    }
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-h3 {
-  color : #5F7FFF;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #5F7FFF;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
 
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-  </style>
 </head>
 <body>
 <!-- Image and text -->
@@ -73,7 +31,11 @@ h3 {
 
     <div class="col-sm-8 text-left"> 
       <h3>தமிழ் சொல் தளத்திற்கு உங்களை அன்புடன் வரவேற்கிறேன்! 🙏</h3><br/>
-      <img src=".\images\tamil-sol-banner.png" class="img-fluid rounded width: 100%" />
+      <div class="your-class" align="center">
+        <div><img src=".\images\tamil-1.png" class="img-fluid rounded width: 100%" /></div>
+        <div><img src=".\images\tamil-2.jpg" class="img-fluid rounded width: 100%" /></div>
+      </div>
+
       <hr>
       <p>The objective of this website is to help children to learn Tamil language by pronouncing each character clearly.</p>
       <hr>
@@ -253,5 +215,13 @@ h3 {
     document.documentElement.scrollTop = 0;
   }
   </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick();
+    });
+  </script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src=".\slick\slick.min.js"></script>
 </body>
 </html>
