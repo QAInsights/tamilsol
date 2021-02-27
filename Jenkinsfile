@@ -1,33 +1,26 @@
 pipeline {
   agent any
   stages {
-    stage('Parallel Build') {
+    stage('stas') {
       parallel {
-        stage('Parallel Build') {
+        stage('stas') {
           steps {
-            echo 'testing'
-            echo 'Test'
+            stash(name: 'test', useDefaultExcludes: true)
           }
         }
 
-        stage('One') {
+        stage('') {
           steps {
             echo 'test'
-          }
-        }
-
-        stage('2') {
-          steps {
-            echo '3'
           }
         }
 
       }
     }
 
-    stage('Test') {
+    stage('unstash') {
       steps {
-        echo 'test'
+        unstash 'stas'
       }
     }
 
