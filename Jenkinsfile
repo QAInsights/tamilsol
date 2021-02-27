@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             echo 'test'
           }
@@ -20,7 +20,7 @@ pipeline {
 
     stage('unstash') {
       steps {
-        unstash 'stas'
+        unstash 'test'
       }
     }
 
